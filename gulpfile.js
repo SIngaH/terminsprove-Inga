@@ -47,15 +47,15 @@ function watchJs(done){
 }
 
 function images(done){
-    gulp.src("./src/assets/**/*")
+    gulp.src("./src/images/**/*")
         .pipe(imagemin())
-        .pipe(gulp.dest("./dist/assets"))
+        .pipe(gulp.dest("./dist/assets/images"))
         .pipe(connect.reload());
     done();
 }
 
 function watchImages(done){
-    gulp.watch("./src/assets/**/*", { ignoreInitial: false }, images);
+    gulp.watch("./src/images/**/*", { ignoreInitial: false }, images);
 }
 
 gulp.task("dev", function(done){
