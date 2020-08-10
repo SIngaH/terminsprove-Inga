@@ -1,0 +1,20 @@
+nav{
+    display:flex;
+    justify-content:space-around;
+    border-bottom: solid 1px var(--pink);
+    border-top: solid 1px var(--pink);
+    padding:25px 0;
+    ul{
+        display:flex;
+        justify-content:space-evenly;
+        li{
+            list-style: none;
+            text-transform: uppercase;
+            a{
+                color:var(--white);
+                text-decoration: none;
+                padding:0 25px;
+            }
+        }
+}
+} 
