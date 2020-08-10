@@ -37,9 +37,6 @@ function watchScss(done){
 
 function js(done){
     gulp.src("./src/js/**/*.js")
-        // .pipe(babel({
-        //     presets: ["@babel/env"]
-        // }))
         .pipe(gulp.dest("./dist/assets/js"))
         .pipe(connect.reload());
     done();
@@ -50,15 +47,15 @@ function watchJs(done){
 }
 
 function images(done){
-    gulp.src("./src/images/**/*")
+    gulp.src("./src/assets/**/*")
         .pipe(imagemin())
-        .pipe(gulp.dest("./dist/assets/images"))
+        .pipe(gulp.dest("./dist/assets"))
         .pipe(connect.reload());
     done();
 }
 
 function watchImages(done){
-    gulp.watch("./src/images/**/*", { ignoreInitial: false }, images);
+    gulp.watch("./src/assets/**/*", { ignoreInitial: false }, images);
 }
 
 gulp.task("dev", function(done){
