@@ -11,12 +11,22 @@ document.addEventListener("DOMContentLoaded", ()=>{
             header.style.background="url('../../assets/images/bg/header_bg_2.jpg')";
             loader.classList.add("header-hide");
             heroImg.classList.remove("header-hide");
-            index = 1;
+            index ++;
+        }else if(index === 1){
+            header.style.background="none";
+            loader.classList.remove("header-hide");
+            heroImg.classList.add("header-hide");
+            index ++;
+        }else if(index === 2){
+            header.style.background="url('../../assets/images/bg/header_bg_1.jpg')";
+            loader.classList.add("header-hide");
+            heroImg.classList.remove("header-hide");
+            index ++;
         }else{
             header.style.background="none";
             loader.classList.remove("header-hide");
             heroImg.classList.add("header-hide");
-            index = 0 
+            index = 0;
         }
     }
 
