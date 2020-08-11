@@ -1,4 +1,48 @@
 document.addEventListener("DOMContentLoaded", ()=>{
+/* REMEMBER TO RESET THE API http://localhost:4000/reset */
+/* Api hentning af events */
+    let boxes = document.querySelectorAll(".pink-box");
+
+    fetch("http://localhost:4000/events", {
+        "method": "GET",
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        }
+      })
+      .then (function(response){
+          return response.json();
+      })
+      .then (function(result){
+          result.forEach(event => {
+            let date = new Date(event.eventDate);
+            let day = (new Date(event.eventDate)).getDate();
+            let month = (new Date(event.eventDate)).getMonth();
+            let time = (new Date(event.eventDate)).getHours();
+            let min = (new Date(event.eventDate)).getMinutes();
+
+            console.log(event.eventDate);
+            console.log(month)
+            /* if 0 jan */
+            console.log(min)
+
+            let location = event.location;
+              
+          });
+      });
+
+      function inputData(location, date){
+        console.log(location);
+        boxes.forEach(box => {
+            box.innerHTML = `
+                <p class="events-date">` + location + `</p>
+                <p class="events-time">` + location + `</p>
+                <p class="events-location">` + location + `</p>
+            `;
+        });
+      }
+
+/* billede gallleri delen */
+
     let box1 = document.querySelector(".box1"); 
     let imgs12 =  document.querySelector(".events-img1-2"); 
 
