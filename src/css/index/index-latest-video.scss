@@ -1,0 +1,23 @@
+#latest-video{
+    margin:5% 0;
+    video{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .video-buttons{
+        display:flex;
+        justify-content:center;
+        margin:1% 0;
+        img{
+            border:solid 2px var(--white);
+            padding:0.3%;
+            width:1.5%;
+            height:auto;
+        }
+        .prev{
+            transform: rotate(180deg);
+            margin-right:1%;
+        }
+    }
+}

@@ -4,7 +4,9 @@
     <body>
     <div id="wrapper">
         <header>
-            <img src="../../Logo.svg" alt="">
+            <img src="./assets/images/icon/Logo.svg" alt="Night Club" class="night-club-logo">
+            <h1>have a good time</h1>
+            <img src="./assets/images/bottom_line.png" alt="pink line" class="pink-line-header">
         </header>
         
         <%- include('../partials/hoved-navigation') %>
@@ -12,30 +14,63 @@
         <section id="welcome-to-night-club">
             <h1>welcome in night <span class="pink">club</span></h1>
             <img src="./assets/images/bottom_line2.png" alt="pink line" class="little-pink-line">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <div id="welcome_three_imgs">
+                <img src="./assets/images/content-img/thumb1.jpg" alt="plates">
+                <img src="./assets/images/content-img/reastaurant_1.jpg" alt="restaurant">
+                <img src="./assets/images/content-img/thumb2.jpg" alt="people">
+            </div>
         </section>
 
         <section id="events-of-the-month">
             <h2>events of the month</h2>
             <img src="./assets/images/bottom_line2.png" alt="pink line" class="little-pink-line">
+            <div id="events-imgs">
+                <div class="events-imgs events-img1-2">
+                    <img src="./assets/images/content-img/event-thumb1.jpg" alt="">
+                    <img src="./assets/images/content-img/event-thumb2.jpg" alt="">
+                </div>
+                <div class="events-imgs events-img3-4 hide">
+                    <img src="./assets/images/content-img/event-thumb3.jpg" alt="">
+                    <img src="./assets/images/content-img/event-thumb4.jpg" alt="">
+                </div>
+                <div class="events-imgs events-img5-6 hide">
+                    <img src="./assets/images/content-img/event-thumb5.jpg" alt="">
+                    <img src="./assets/images/content-img/event-thumb6.jpg" alt="">
+                </div>
+            </div>
+            <div class="progress-boxes">
+                <div class="progress-box box1"></div>
+                <div class="progress-box box2"></div>
+                <div class="progress-box box3"></div>
+            </div>
         </section>
 
         <section id="night-club-gallery">
             <h2>night club gallery</h2>
             <img src="./assets/images/bottom_line2.png" alt="pink line" class="little-pink-line">
-            <img src="" alt="">
+            <img src="./assets/images/bg/copyright.jpg" alt="people partying" class="gallery-img">
         </section>
 
         <section id="night-club-track">
             <h2>night club track</h2>
             <img src="./assets/images/bottom_line2.png" alt="pink line" class="little-pink-line">
+            <audio controls>
+                <source src="horse.ogg" type="audio/ogg">
+            </audio> 
         </section>
 
         <section id="latest-video">
             <h2>latest video</h2>
             <img src="./assets/images/bottom_line2.png" alt="pink line" class="little-pink-line">
+            <video width="60%" height="auto" controls>
+                <source src="./assets/images/media/space.mp4" type="video/mp4">
+                <!-- <img src="./assets/images/bg/no_video.jpg" alt="no video"> -->
+            </video> 
+            <div class="video-buttons">
+                <img src="./assets/images/icon/Play.svg" alt="previous" class="prev">
+                <img src="./assets/images/icon/Play.svg" alt="next" class="next">
+            </div>
+
         </section>
 
         <section id="recent-blog">
@@ -43,7 +78,7 @@
             <img src="./assets/images/bottom_line2.png" alt="pink line" class="little-pink-line">
 
         </section>
-
+        <%- include('../partials/footer') %>
     </div>
 
 <%- include('../partials/last') %>
