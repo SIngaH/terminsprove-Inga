@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     function callBack(){
         if(index === 0){
-            header.style.background="url('../images/bg/header_bg_2.jpg')";
+            header.style.background="url('../../assets/images/bg/header_bg_2.jpg')";
             loader.classList.add("header-hide");
             heroImg.classList.remove("header-hide");
             index = 1;
