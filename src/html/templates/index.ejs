@@ -4,9 +4,12 @@
     <body>
     <div id="wrapper">
         <header>
-            <img src="./assets/images/icon/Logo.svg" alt="Night Club" class="night-club-logo">
-            <h1>have a good time</h1>
-            <img src="./assets/images/bottom_line.png" alt="pink line" class="pink-line-header">
+            <div class="hero-img">
+                <img src="./assets/images/icon/Logo.svg" alt="Night Club" class="night-club-logo">
+                <h1>have a good time</h1>
+                <img src="./assets/images/bottom_line.png" alt="pink line" class="pink-line-header">
+            </div>
+            <img src="./assets/images/loader/madbars.gif" alt="loader" class="loader header-hide">
         </header>
         
         <%- include('../partials/hoved-navigation') %>
@@ -81,5 +84,6 @@
         <%- include('../partials/footer') %>
     </div>
     <script src="./assets/js/events-of-the-month.js"></script>
+    <script src="./assets/js/hero.js"></script>
 
 <%- include('../partials/last') %>
