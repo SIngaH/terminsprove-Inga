@@ -1,0 +1,29 @@
+footer ul{
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction:row;
+    padding-bottom:15px;
+    .fab{
+        padding:6px;
+        border:solid var(--white) 2px;
+        font-size:15px;
+    }
+    .fa-facebook-f{
+        padding:6px 8.6px;
+    }
+    li{
+        color:var(--white);
+        list-style:none;
+        a{
+            color:var(--white);
+            text-decoration: none;
+        }
+    }
+    .first-footer-li{
+        text-transform: capitalize;
+        padding-right:23%;
+    }
+    .last-footer-li{
+        padding-left:19%;
+    }
+}
