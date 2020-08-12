@@ -17,25 +17,22 @@ document.addEventListener("DOMContentLoaded", ()=>{
             let date = new Date(event.eventDate);
             let day = (new Date(event.eventDate)).getDate();
             let month = (new Date(event.eventDate)).getMonth();
-            let time = (new Date(event.eventDate)).getHours();
+            if(month === 0){
+                month = "Jan"
+            }
+            let hours = (new Date(event.eventDate)).getHours();
             let min = (new Date(event.eventDate)).getMinutes();
-
-            console.log(event.eventDate);
-            console.log(month)
-            /* if 0 jan */
-            console.log(min)
-
             let location = event.location;
-              
+
+            inputData(location, month, day, hours, min);          
           });
       });
 
-      function inputData(location, date){
-        console.log(location);
+      function inputData(location, month, day, hours, min){
         boxes.forEach(box => {
             box.innerHTML = `
-                <p class="events-date">` + location + `</p>
-                <p class="events-time">` + location + `</p>
+                <p class="events-date">` + day + " " + month + `</p>
+                <p class="events-time">` + hours + ":" + min + min + `</p>
                 <p class="events-location">` + location + `</p>
             `;
         });
