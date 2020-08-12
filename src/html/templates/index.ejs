@@ -144,6 +144,17 @@
                 <!--henter fra apiet-->
             </div>
         </section>
+
+        <section id="newsletter">
+            <!--REMEBER TO MAKE THIS POST-->
+            <h4>want the latest night club news</h4>
+            <p>Subscribe to our newsletter and neer miss a <span class="pink">Event</span></p>
+            <form action="javascript:alert('You have subscribed to our newsletter!')"><!--POST(this);-->
+                <input type="email" placeholder="enter your email" required pattern=".+\.[a-z]{2,}$">
+                <button>subscribe</button>
+            </form>
+        </section>
+
         <%- include('../partials/footer') %>
     </div>
     <script src="./assets/js/events-of-the-month.js"></script>
@@ -152,5 +163,7 @@
     <script src="./assets/js/billedeGallery.js"></script>
     <script src="./assets/js/testimonials.js"></script>
     <script src="./assets/js/resent-blog.js"></script>
+    <script src="./assets/js/newsletter-post.js"></script>
+
 
 <%- include('../partials/last') %>
