@@ -1,5 +1,36 @@
 #welcome_three_imgs{
-    display: flex;
-    justify-content:space-around;
+    // display: flex;
+    // justify-content:space-around;
+    display:grid;
+    grid-template-columns:repeat(3, 30%);
+    grid-template-rows:100%;
+    gap:3%;
     margin:2% 10%;
+    color:var(--grey);
+    text-align:center;
+    img{
+        height:100%;
+    }
+    .b-box1, .b-box2, .b-box3{
+        display:none;
+    }
+    .black-box{
+        padding:5%;
+        border:solid 2px var(--pink);
+        background-color:var(--black);
+        margin:0 5%;
+        h3{
+            text-transform:uppercase;
+            padding:10% 0;
+        }
+        p{
+            padding:10% 0 15% 0;
+        }
+        i{
+            border:solid 2px var(--pink);
+            padding:5%;
+            color:var(--pink);
+            margin:15% 0 10% 0;
+        }
+    }
 }
