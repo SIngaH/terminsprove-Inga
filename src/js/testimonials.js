@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let box1 = document.querySelector("#testimonials .box1"); 
     let box2 = document.querySelector("#testimonials .box2"); 
     let box3 = document.querySelector("#testimonials .box3"); 
-    console.log(box1);
     
     box1.addEventListener("click", ()=>{
         box1.classList.add("pink");
@@ -41,7 +40,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         .then (function(result){
             result.forEach(get => {
                 if(get.id === index){
-                    console.log(get);
                     testimonials.innerHTML=`
                         <img src="./assets/images/content-img/testimonial_` + get.id + `.jpg" alt="` + get.name + `">
                         <h4>` + get.name + `</h4>
