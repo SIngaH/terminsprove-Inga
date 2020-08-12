@@ -38,17 +38,19 @@
     .hide{
         display:none;
     }
-    .progress-boxes{
-        display:flex;
-        justify-content:center;
-        .progress-box{
-            margin:0 1%;
-            width:10px;
-            height:10px;
-            background-color:var(--white);
-        }
-        .pink{
-            background-color:var(--pink);
-        }
+}
+
+/*disse kasser er i events og i testimonials*/
+.progress-boxes{
+    display:flex;
+    justify-content:center;
+    .progress-box{
+        margin:0 1%;
+        width:10px;
+        height:10px;
+        background-color:var(--white);
+    }
+    .pink{
+        background-color:var(--pink);
     }
 }
