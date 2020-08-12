@@ -40,14 +40,14 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 /* billede gallleri delen */
 
-    let box1 = document.querySelector(".box1"); 
+    let box1 = document.querySelector("#events-of-the-month .box1"); 
     let imgs12 =  document.querySelector(".events-img1-2"); 
 
-    let box2 = document.querySelector(".box2");
+    let box2 = document.querySelector("#events-of-the-month .box2");
     let imgs34 =  document.querySelector(".events-img3-4"); 
 
     let box3 = document.querySelector(".box3");
-    let imgs56 =  document.querySelector(".events-img5-6"); 
+    let imgs56 =  document.querySelector("#events-of-the-month .events-img5-6"); 
     
     box1.addEventListener("click", ()=>{
         imgs12.classList.remove("hide");
