@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         return response.json();
     })
     .then (function(result){
-        console.log(result)
         result.forEach(img => {
             if(img.id < 6 ){
                 insertImgs.innerHTML+=`
@@ -22,7 +21,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 insertImgs2.innerHTML+=`
                     <img src="` + img.url + `" alt="` + img.name + `"/>
                 `;
-                console.log(img.id)
             }
         });
     });
