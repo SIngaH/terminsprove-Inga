@@ -1,6 +1,4 @@
 #welcome_three_imgs{
-    // display: flex;
-    // justify-content:space-around;
     display:grid;
     grid-template-columns:repeat(3, 30%);
     grid-template-rows:100%;
@@ -15,10 +13,11 @@
         display:none;
     }
     .black-box{
-        padding:5%;
+        padding:7%;
         border:solid 2px var(--pink);
         background-color:var(--black);
         margin:0 5%;
+        width:100%;
         h3{
             text-transform:uppercase;
             padding:10% 0;

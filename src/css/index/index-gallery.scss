@@ -1,7 +1,18 @@
-#night-club-gallery{/*remember to hide overflow */
+#night-club-gallery{
     margin:5% 0;
-    .gallery-img{
-        width:272%;
-        height:auto;
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:467px;
+    overflow:hidden;
+    .billede-gallery, .billede-gallery2{
+        display:flex;
+        img{
+            height:100%;
+            width:auto;
+        }
+    }
+    .billede-gallery{
+        margin-top:5%;
     }
 }
