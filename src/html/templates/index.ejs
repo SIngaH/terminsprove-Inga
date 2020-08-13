@@ -146,12 +146,11 @@
         </section>
 
         <section id="newsletter">
-            <!--REMEBER TO MAKE THIS POST-->
             <h4>want the latest night club news</h4>
             <p>Subscribe to our newsletter and neer miss a <span class="pink">Event</span></p>
-            <form onsubmit="return post(this)"><!--something wrong with (this)-->
-                <input type="email" placeholder="enter your email" required pattern=".+\.[a-z]{2,}$">
-                <button>subscribe</button>
+            <form action="javascript:alert('Thank you for subscribing to our newsletter!')">
+                <input type="email" placeholder="enter your email" required pattern=".+\.[a-z]{2,}$" id="newsletter-email">
+                <button id="button">subscribe</button>
             </form>
         </section>
 
