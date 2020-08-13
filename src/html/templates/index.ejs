@@ -149,7 +149,7 @@
             <!--REMEBER TO MAKE THIS POST-->
             <h4>want the latest night club news</h4>
             <p>Subscribe to our newsletter and neer miss a <span class="pink">Event</span></p>
-            <form action="javascript:alert('You have subscribed to our newsletter!')"><!--POST(this);-->
+            <form onsubmit="return post(this)"><!--something wrong with (this)-->
                 <input type="email" placeholder="enter your email" required pattern=".+\.[a-z]{2,}$">
                 <button>subscribe</button>
             </form>
