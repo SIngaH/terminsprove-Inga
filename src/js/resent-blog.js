@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         return response.json();
     })
     .then (function(result){
-        console.log(result);
         result.forEach(blog => {
             let contentSmaller = blog.content.slice(0, 200);
             recentBlog.innerHTML+=`
