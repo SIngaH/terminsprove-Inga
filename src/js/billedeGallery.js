@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         return response.json();
     })
     .then (function(result){
-        console.log(result);
-        result.forEach(img => {
+        result.forEach(img => { /* change to index later */
             if(img.id < 61 ){
                 insertImgs.innerHTML+=`
                     <img src="` + img.url + `" alt="` + img.name + `"/>
