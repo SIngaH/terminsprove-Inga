@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", ()=>{
-/* REMEMBER TO RESET THE API http://localhost:4000/reset */
 /* Api hentning af events */
     let boxes = document.querySelectorAll(".pink-box");
 
