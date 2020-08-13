@@ -13,9 +13,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
     .then (function(result){
         result.forEach(blog => {
             let contentSmaller = blog.content.slice(0, 200);
+            let id = blog.asset - "1";
             recentBlog.innerHTML+=`
                 <div>
-                    <img src="./assets/images/content-img/blog_full` + blog.id + `.jpg" alt=""/>
+                    <img src="./assets/images/content-img/blog_full` + id + `.jpg" alt=""/>
                     <h3>` + blog.title + `</h3>
                     <p class="pink">` + blog.author + `</p>
                     <p>` + contentSmaller + "..." + `</p>

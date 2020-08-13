@@ -12,16 +12,18 @@ document.addEventListener("DOMContentLoaded", ()=>{
         return response.json();
     })
     .then (function(result){
+        console.log(result);
         result.forEach(img => {
-            if(img.id < 6 ){
+            if(img.id < 61 ){
                 insertImgs.innerHTML+=`
                     <img src="` + img.url + `" alt="` + img.name + `"/>
                 `;
-            }else if(img.id > 7 && img.id < 15){
+            }else if(img.id > 61 && img.id < 67){
                 insertImgs2.innerHTML+=`
                     <img src="` + img.url + `" alt="` + img.name + `"/>
                 `;
             }
         });
-    });
+    })
+    .catch(error => console.error(error))
 });
