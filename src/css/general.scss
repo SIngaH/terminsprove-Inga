@@ -41,3 +41,14 @@ audio{
     margin:5% auto;
     display:block;
 }
+@media only screen and (max-width: 800px) {
+    h2{
+        font-size:13px;
+    }
+    h3, h4{
+        font-size:12px;
+    }
+    p{
+        font-size:10px;
+    }
+}

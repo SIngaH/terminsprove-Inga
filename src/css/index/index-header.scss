@@ -1,16 +1,19 @@
 header{
     background: url("../../images/bg/header_bg_2.jpg");
     background-repeat: no-repeat;
+    background-position: center; 
     height:671px;
     width:auto;
     h1{
         letter-spacing:0.675em;
+        text-align:center;
     }
     img{
         display: block;
         margin:auto;
     }
     .night-club-logo{
+        width:80%;
         padding-top: 24%;
     }
     .pink-line-header{
@@ -22,5 +25,15 @@ header{
     }
     .loader{
         padding-top: 24%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    h1{
+        font-size:20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    header{
+        height:360px;
     }
 }
