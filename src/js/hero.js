@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     function callBack(){
         if(index === 0){
             header.style.background="url('../../assets/images/bg/header_bg_2.jpg')";
+            header.style.backgroundPosition="center";
             loader.classList.add("header-hide");
             heroImg.classList.remove("header-hide");
             index ++;
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             index ++;
         }else if(index === 2){
             header.style.background="url('../../assets/images/bg/header_bg_1.jpg')";
+            header.style.backgroundPosition="center";
             loader.classList.add("header-hide");
             heroImg.classList.remove("header-hide");
             index ++;
@@ -29,5 +31,4 @@ document.addEventListener("DOMContentLoaded", ()=>{
             index = 0;
         }
     }
-
 });
