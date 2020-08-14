@@ -10,6 +10,7 @@ nav{
     ul{
         display:flex;
         justify-content:space-evenly;
+        margin-top:1%;
         li{
             list-style: none;
             text-transform: uppercase;
@@ -42,5 +43,8 @@ nav{
     }
     nav .dropdown{
         display:block;
+    }
+    nav ul li a{
+        font-size: 18px;
     }
 }
