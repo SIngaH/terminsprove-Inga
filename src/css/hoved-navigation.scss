@@ -4,13 +4,13 @@ nav{
     border-bottom: solid 1px var(--pink);
     border-top: solid 1px var(--pink);
     padding:25px 0;
-    margin-bottom:50px;
+    margin-bottom:50px; 
     background: linear-gradient(
   	135deg, var(--black) 96%, var(--pink) 30%);
     ul{
         display:flex;
         justify-content:space-evenly;
-        margin-top:1%;
+        margin-top:1%; 
         li{
             list-style: none;
             text-transform: uppercase;

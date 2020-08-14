@@ -3,7 +3,7 @@ footer ul{
     justify-content:space-evenly;
     flex-direction:row;
     padding-bottom:15px;
-    margin: 0 2%;
+    margin: 0 2%; 
     .fab{
         padding:6px;
         border:solid var(--white) 2px;
@@ -44,7 +44,7 @@ footer ul{
 }
 @media only screen and (max-width: 540px) {
     footer ul{
-        flex-direction:column;
+        flex-direction:column; 
     }
     footer ul li, footer ul .otherLis, footer .last-footer-li{
         margin-right: auto;
