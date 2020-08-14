@@ -3,7 +3,6 @@ const ejs = require("gulp-ejs");
 const rename = require("gulp-rename");
 const connect = require("gulp-connect");
 const sass = require("gulp-sass");
-const babel = require("gulp-babel");
 const imagemin = require("gulp-imagemin");
 
 sass.compiler = require("node-sass");
