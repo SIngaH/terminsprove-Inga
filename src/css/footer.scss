@@ -26,6 +26,15 @@ footer ul{
     .last-footer-li{
         margin-left:auto;
     }
+    .otherLis{
+        display:flex;
+        justify-content:space-evenly;
+        flex-direction:row;
+        margin:0 auto;
+        li{
+            margin:0 2%;
+        }
+    }
 }
 @media only screen and (max-width: 713px) {
     footer ul li{
@@ -38,5 +47,8 @@ footer ul{
     }
     footer ul li{
         margin:1% auto;
+    }
+    footer ul .otherLis{
+        margin:3% auto;
     }
 }
