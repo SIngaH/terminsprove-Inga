@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", ()=>{
 /* Api hentning af events */
     let boxes = document.querySelectorAll(".pink-box");
+    let eventsText = document.querySelectorAll(".events-text");
 
     fetch("http://localhost:4000/events", {
         "method": "GET",
@@ -23,16 +24,25 @@ document.addEventListener("DOMContentLoaded", ()=>{
             let min = (new Date(event.eventDate)).getMinutes();
             let location = event.location;
 
-            inputData(location, month, day, hours, min);          
+            let description = event.eventDescription.slice(0, 100) + "...";
+            let name = event.eventName;
+
+            inputData(location, month, day, hours, min, description, name);          
           });
       });
 
-      function inputData(location, month, day, hours, min){
+      function inputData(location, month, day, hours, min, description, name){
         boxes.forEach(box => {
             box.innerHTML = `
                 <p class="events-date">` + day + " " + month + `</p>
                 <p class="events-time">` + hours + ":" + min + min + `</p>
                 <p class="events-location">` + location + `</p>
+            `;
+        });
+        eventsText.forEach(text=>{
+            text.innerHTML = `
+                <h3>` + name + `</h3>
+                <p>` + description + `</p>
             `;
         });
       }
@@ -73,5 +83,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
         box1.classList.remove("pink");
         box2.classList.remove("pink");
         box3.classList.add("pink");
-    });
+    }); 
 });
