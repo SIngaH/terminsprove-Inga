@@ -33,3 +33,15 @@
         }
     }
 }
+@media only screen and (max-width: 540px) {
+    #welcome_three_imgs{
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        img, .black-box{
+            margin:5% 0;
+        }
+    }
+}

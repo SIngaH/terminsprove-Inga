@@ -35,3 +35,13 @@
         margin-left: 1.5%;
     }
 }
+@media only screen and (max-width: 540px) {
+    #newsletter form{
+        display:flex;
+        flex-direction:column;
+        input, button{
+            width: 60%;
+            margin: 1% auto;
+        }
+    }
+}

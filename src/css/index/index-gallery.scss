@@ -26,3 +26,14 @@
         height:289px;
     }
 }
+@media only screen and (max-width: 540px) {
+    .billede-gallery, .billede-gallery2{
+        flex-direction:column;
+    }
+    .billede-gallery2{
+        display:none;
+    }
+    #night-club-gallery{
+        height: 1589px;
+    }
+}

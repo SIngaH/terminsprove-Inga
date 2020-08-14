@@ -24,3 +24,8 @@
 .hide{
     display:none;
 }
+@media only screen and (max-width: 540px) {
+    #latest-video video, #latest-video .no-video-img {
+        width: 90%;
+    }
+}

@@ -86,3 +86,12 @@
         background-color:var(--pink);
     }
 }
+@media only screen and (max-width: 540px) {
+    #events-of-the-month .events-imgs{
+            flex-direction: column;
+            .box-and-img{
+                margin: 2% auto;
+                width:90%;
+            }
+    }
+}

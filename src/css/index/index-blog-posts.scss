@@ -18,3 +18,11 @@
         }
     }
 }
+@media only screen and (max-width: 540px) {
+    #recent-blog .recent-blog-insert{
+        flex-direction: column;
+        div{
+            margin:5%;
+        }
+    }
+}

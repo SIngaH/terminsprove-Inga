@@ -27,3 +27,16 @@ footer ul{
         margin-left:auto;
     }
 }
+@media only screen and (max-width: 713px) {
+    footer ul li{
+        font-size:12px;
+    }
+}
+@media only screen and (max-width: 540px) {
+    footer ul{
+        flex-direction:column;
+    }
+    footer ul li{
+        margin:1% auto;
+    }
+}
