@@ -46,10 +46,15 @@ footer ul{
     footer ul{
         flex-direction:column;
     }
-    footer ul li{
-        margin:1% auto;
+    footer ul li, footer ul .otherLis, footer .last-footer-li{
+        // margin:1% auto;
+        margin-right: auto;
+        margin-bottom:5%;
     }
     footer ul .otherLis{
-        margin:3% auto;
+        margin-left:4%;
+    }
+    footer ul .last-footer-li{
+        margin-left:0;
     }
 }
